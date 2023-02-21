@@ -1,5 +1,10 @@
 ## Challenge from [codedesign](https://codedesign.dev/)
 
+1. On Development :
+
+   - Add Responsive
+   - Add React Router
+
 1. Level Easy :
 
    - [Holadok](https://codedesign.dev/challenge/holadok)
