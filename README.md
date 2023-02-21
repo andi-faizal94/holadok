@@ -1,7 +1,8 @@
 ## Challenge from [codedesign](https://codedesign.dev/)
 
 1. Level Easy :
-   [Holadok](https://codedesign.dev/challenge/holadok)
+
+   - [Holadok](https://codedesign.dev/challenge/holadok)
 
 1. Tech Stack :
 
