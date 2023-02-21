@@ -1,10 +1,10 @@
 import React from 'react';
-import doctor from '../src/assets/doctor.png';
-import icons from '../src/assets/icons.png';
-import nurse from '../src/assets/nurse.png';
-import icon1 from '../src/assets/icon1.svg';
-import icon2 from '../src/assets/icon2.svg';
-import icon3 from '../src/assets/icon3.svg';
+import doctor from '../assets/doctor.png';
+import icons from '../assets/icons.png';
+import nurse from '../assets/nurse.png';
+import icon1 from '../assets/icon1.svg';
+import icon2 from '../assets/icon2.svg';
+import icon3 from '../assets/icon3.svg';
 
 const Hero = () => {
   return (
