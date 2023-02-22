@@ -13,22 +13,22 @@ const Navbar = () => {
           <div className='w-7/12'>
             <ul className='flex items-center gap-x-10'>
               <li>
-                <a className='font-sans-pro' href=''>
+                <a className='font-sans-pro' href='#home'>
                   Home
                 </a>
               </li>
               <li>
-                <a className='font-sans-pro' href=''>
+                <a className='font-sans-pro' href='#features'>
                   Features
                 </a>
               </li>
               <li>
-                <a className='font-sans-pro' href=''>
+                <a className='font-sans-pro' href='#blog'>
                   Blog
                 </a>
               </li>
               <li>
-                <a className='font-sans-pro' href=''>
+                <a className='font-sans-pro' href='#aboutus'>
                   About Us
                 </a>
               </li>
@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className='w-3/12 '>
             <ul className='flex justify-end items-center gap-x-8'>
               <li>
-                <a href='' className='font-sans-pro'>
+                <a href='#login' className='font-sans-pro'>
                   Login
                 </a>
               </li>
