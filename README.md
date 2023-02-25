@@ -8,7 +8,6 @@
 1. Level Easy :
 
    - ![holadok](https://github.com/andi-faizal94/holadok/blob/main/src/assets/holadok.png)
-   - !
    - [Holadok](https://codedesign.dev/challenge/holadok)
 
 1. Tech Stack :
