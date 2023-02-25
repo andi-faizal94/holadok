@@ -60,7 +60,7 @@ const Hero = () => {
       </section>
       <section className='absolute bottom-0 left-16 right-16 p-10 flex items-start h-[191px] bg-[#203271] text-white shadow-lg'>
         <div className='flex gap-x-3 items-start'>
-          <div className='mt-1'>
+          <div className='pt-1'>
             <img src={icon1} alt='' />
           </div>
           <div>
@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='flex gap-x-3 items-stretch'>
-          <div className='mt-1'>
+          <div className='pt-1'>
             <img src={icon2} alt='' />
           </div>
           <div>
@@ -88,7 +88,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='flex gap-x-3 items-stretch'>
-          <div className='mt-1'>
+          <div className='pt-1'>
             <img src={icon3} alt='' />
           </div>
           <div>
