@@ -9,6 +9,7 @@ const Navbar = () => {
     function responsiveNavbar() {
       const viewWidth = window.innerWidth;
       const sm = 640;
+
       if (viewWidth < sm) {
         setIsOpenNavbar(false);
       } else {
@@ -29,7 +30,7 @@ const Navbar = () => {
     <div className='absolute w-full py-11 z-10'>
       <header className='container mx-auto'>
         <nav className='flex flex-wrap justify-between items-center'>
-          <div className='flex items-center text-white md:text-black z-50'>
+          <div className='flex items-center text-black z-50'>
             <img src={logo} alt='holadok' />
             <h1 className='ml-4 font-sans-pro font-black'>Holadok</h1>
           </div>
@@ -45,7 +46,7 @@ const Navbar = () => {
               </button>
             ) : (
               <button>
-                <FaTimes className='transition duration-500 ease-out z-50' />
+                <FaTimes className='transition duration-500 ease-out text-white z-50' />
               </button>
             )}
           </div>
@@ -53,13 +54,13 @@ const Navbar = () => {
             className={`w-full lg:flex lg:justify-between lg:w-10/12 lg:items-center z-20 lg:z-30
             ${
               isOpenNavbar
-                ? 'flex flex-col items-center justify-center h-screen w-full inset-0 fixed text-white'
+                ? 'flex flex-col items-center justify-center h-screen w-full inset-0 fixed bg-black text-white'
                 : 'hidden'
             }
             
             `}
           >
-            <ul className='flex flex-col gap-y-4 justify-between items-center  lg:flex-row lg:items-center lg:justify-between lg:gap-x-10 lg:gap-y-0'>
+            <ul className='flex flex-col gap-y-4 mb-4 lg:mb-0 justify-between items-center  lg:flex-row lg:items-center lg:justify-between lg:gap-x-10'>
               <li>
                 <a className='font-sans-pro' href='#home'>
                   Home
