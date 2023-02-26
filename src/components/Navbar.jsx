@@ -7,17 +7,23 @@ const Navbar = () => {
   const handleClick = () => setIsOpenNavbar((prev) => !prev);
   useEffect(() => {
     function responsiveNavbar() {
-      const viewWidth = window.outerWidth;
+      const viewWidth = window.innerWidth;
       const sm = 640;
-
-      if (viewWidth < sm && viewWidth > sm) {
+      if (viewWidth < sm) {
+        setIsOpenNavbar(false);
+      } else {
         setIsOpenNavbar(false);
       }
     }
+
     responsiveNavbar();
 
     window.addEventListener('resize', responsiveNavbar);
-  }, [isOpenNavbar]);
+
+    return () => {
+      window.removeEventListener('resize', responsiveNavbar);
+    };
+  }, []);
 
   return (
     <div className='absolute w-full py-11 z-10'>
@@ -44,7 +50,7 @@ const Navbar = () => {
             )}
           </div>
           <div
-            className={`w-full lg:flex lg:justify-between lg:w-10/12 lg:items-center
+            className={`w-full lg:flex lg:justify-between lg:w-10/12 lg:items-center z-20 lg:z-30
             ${
               isOpenNavbar
                 ? 'flex flex-col items-center justify-center h-screen w-full inset-0 fixed text-white'
@@ -53,7 +59,7 @@ const Navbar = () => {
             
             `}
           >
-            <ul className='flex lg:flex-row lg:items-center lg:justify-between lg:gap-x-10 z-20 lg:z-30'>
+            <ul className='flex flex-col gap-y-4 justify-between items-center  lg:flex-row lg:items-center lg:justify-between lg:gap-x-10 lg:gap-y-0'>
               <li>
                 <a className='font-sans-pro' href='#home'>
                   Home
@@ -75,7 +81,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <ul className='flex lg:flex-row lg:items-center lg:justify-between lg:gap-x-10 z-20 lg:z-30'>
+            <ul className='flex flex-col gap-y-4 justify-between items-center lg:flex-row lg:items-center lg:justify-between lg:gap-x-10 lg:gap-y-0'>
               <li>
                 <a href='#login' className='font-sans-pro'>
                   Login
